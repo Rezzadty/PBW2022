@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<br>
+
+<head>
+	<title> Multimedia HTML 5 </title>
+</head>
+
+<body>
+	<h2> HTML 5 ~ Mengolah File Multimedia</h2>
+	<button onclick="playVid()">Play</button>
+	<button onclick="pauseVid()">Pause</button>
+	<button onclick="durationVid()">Video Duration </button>
+	<button onclick="enableControls()">Enable Controls </button>
+	<button onclick="disableControls()">Disable Controls </button>
+	<button onclick="checkControls()">Check Controls</button>
+	<br>
+	<video width="420" height="420" id="my-video" controls>
+		<source src="media/mov.mp4" type="video/mp4">
+		</source>
+	</video>
+</body>
+<script>
+	var vid = document.getElementById("my-video");
+
+	function playVid() {
+		vid.play();
+	}
+
+	function pauseVid() {
+		vid.pause();
+	}
+
+	function durationVid() {
+		alert(vid.duration)
+	}
+
+	function enableControls() {
+		vid.controls = true;
+		vid.load();
+	}
+
+	function disableControls() {
+		vid.controls = false;
+		vid.load();
+	}
+
+	function checkControls() {
+		alert(vid.controls);
+	}
+</script>
+</br>
+
+</html>
