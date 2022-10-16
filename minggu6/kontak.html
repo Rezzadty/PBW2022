@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Personal Website</title> 
+    </head>
+
+        <body style="background-color:whitesmoke"> 
+            <nav> 
+            <a href="index.html">Home</a>  
+            <a href="CV-RezaAdityaP.pdf">Download CV</a>  
+            <a href="kontak.html">Contact</a>  
+            <a href="tentang.html">About me</a> 
+            </nav> 
+
+                <style>
+                    nav{
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+
+                    }
+
+                    a:link, a:visited{
+                        display: block;
+                        font-weight: bold;
+                        color: white;
+                        background-color: black;
+                        width: 370px;
+                        text-align: none;
+                        padding: 11px;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+
+                    a:hover, a:active{
+                        background-color: black;
+                    }
+
+                    a{
+                        float: left;
+                    }
+
+                </style>
+
+            <div> 
+                <h1>Kontak Saya </h1> 
+                    <form> 
+                        <label for="email">Email</label><br /> 
+                        <textarea type="email" name="email" placeholder="Tulis alamat email anda..." 
+                        rows="1" cols="40"></textarea><br />  
+                        <br />
+
+                        <label for="message">Pesan</label><br />
+                        <textarea name="message" name="message" placeholder="Tulis pesan anda..." 
+                        rows="3" cols="80"></textarea><br />    
+                                             
+                        <br /> 
+                        <br /> 
+                        <input type="submit" value="Submit" /> 
+                    </form> 
+            </div> 
+ 
+            <hr> 
+            <footer style="text-align: center;"> 
+                <p>Copyright &copy; 2020 Reza Aditya P.</p> 
+            </footer> 
+        </body> 
+</html>
