@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            header{
+                border: 1px solid green;
+                padding: 20px;
+            }
+            .row::after{
+                content: " ";
+                clear: both;
+                display: table;
+            }
+            [class*="col"]{
+                float: left;
+                padding: 15px;
+                border: 1px solid green;
+            }
+            .col1{ width:8.334%;}
+            .col2{ width:16.66%; }  
+            .col3{ width:25%; } 
+            .col4{ width:33.33%; }  
+            .col5{ width:41.66%; }  
+            .col6{ width:50%; } 
+            .col7{ width:58.33%; }  
+            .col8{ width:66.66%; } 
+            .col9{ width:75%; }  
+            .col10{ width:83.33%; } 
+            .col11{ width:91.66%; } 
+            .col12{ width:100%; } 
+        </style>
+    </head>
+        <body>
+            <header>
+                <h2>Judul halaman Web  </h2>
+            </header>
+                <main class="row">
+                    <nav class="col3">
+                        <ul>
+                            <li>Menu 1</li>
+                            <li>Menu 2</li>
+                        </ul>
+                    </nav>
+                        <article class="col9">
+                            <h4>Judul isi</h4>
+                                <p>Lorem Ipsum do site Lorem Ipsum do site Lorem Ipsum do site Lorem Ipsum do site Lorem Ipsum do site Lorem Ipsum do site
+                                   Lorem Ipsum do site Lorem Ipsum do site Lorem Ipsum do site Lorem Ipsum do site Lorem Ipsum do site Lorem Ipsum do site
+                                </p>
+                                <div class="col6">
+
+                                </div>
+                                <div class="col6">
+
+                                </div>
+                        </article>
+                </main>
+                <footer class="col12">
+                    copyright <i>&copy;</i> pbw2022
+                </footer>
+        </body>
+</html>
