@@ -1,0 +1,5 @@
+// Kemudian kita tampilkan semua hari 
+// dengan menggunakan method foreach 
+days.forEach(function(day){ 
+    document.write("<p>" + day + "</p>"); 
+});
