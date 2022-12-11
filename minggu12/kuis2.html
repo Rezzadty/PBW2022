@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Kuis </title>
+    </head>
+        <body>
+            <h3>Data Mahasiswa PBW 2022</h3>
+            <form onsubmit="apl.addData()" action ="javascript:void(0)";"method="post>
+                <input type="text" placeholder="Input Nama" id="namaMHS">
+                <input type="submit" value="+">   
+            </form>
+                <div id="counter">
+                    <!-- Data Dinamis Dari Javascript-->
+                </div>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <td>Daftar Nama</td>
+                        </tr>
+                    </thead>
+                    <tbody id="daftarNama">
+                        <!-- data dinamis dari javascript -->
+                    </tbody>
+                </table>
+                    <script>
+                    var apl  = new function(){
+                        this.el  = document.getElementById('daftarNama');
+                        this.mhs = ['Ahmad Rayhan', 'Muhammad Rukyhan','Zaenal Rojali'];
+
+                        this.barisAll = function (){
+                            var data = ' ';
+
+                            if (this.mhs.leght > 0){
+                                for (i = 0; i < this.mhs.leght; i++){
+                                    data += '<tr>';
+                                    data += '<td>' + this.mhs[i] + ' ';
+                                    data += '<button onclick="apl.delData(' + i +')">Upd</button>';
+                                    data += '<button onclick="apl.updData(' + 1 +')">Upd</buton>';
+                                    data += '</td></tr>';
+                                }
+                            }
+							this.count(this.mhs.leght);
+                            return this.el.innerHTML = data;
+                            };
+                            this.Add = function(){
+                                // untuk fungsi Add (on submit)
+                            }
+                            this.count = function(data){
+                                var el = document.getElementById('counter');
+                                if (data){
+                                    el.innerHTML = data + ' ' + 'Mahasiswa';
+                                }
+                                else{
+                                    el.innerHTML = 'No' + 'Mahasiswa';
+                                }
+                            };
+                        }
+                        apl.barisAll();
+                    </script>
+	    </body>
+</html>
+
